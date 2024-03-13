@@ -1,0 +1,117 @@
+service:
+  app_id: 2IMpOmW61
+  name: 私有部署
+  version: 1.0.1
+  description: ' '
+  mode: org
+  logo: null
+  language: nodejs
+  language_version: 16.13.0
+  host_version: 1.0.4
+  host_sub_version: 1.0.0
+  min_system_version: 3.5.0
+  auth: null
+  config: null
+  scope: 1
+apis:
+  - type: external
+    methods:
+      - GET
+    url: /team/:teamUUID/hello
+    function: hello
+  - type: external
+    methods:
+      - GET
+    url: /team/:teamUUID/testProperty
+    function: testProperty
+  - type: external
+    methods:
+      - POST
+    url: /team/:teamUUID/addRepos
+    function: callAddRepos
+  - type: external
+    methods:
+      - POST
+    url: /team/:teamUUID/queryRepo
+    function: callQueryRepo
+  - type: external
+    methods:
+      - POST
+    url: /team/:teamUUID/queryRepos
+    function: callQueryRepos
+  - type: external
+    methods:
+      - POST
+    url: /team/:teamUUID/addRepoCommits
+    function: callAddRepoCommits
+  - type: external
+    methods:
+      - POST
+    url: /team/:teamUUID/addRepoPullRequest
+    function: callAddRepoPullRequest
+  - type: external
+    methods:
+      - POST
+    url: /team/:teamUUID/testCustomCodeRepository
+    function: testCustomCodeRepository
+  - type: external
+    methods:
+      - POST
+    url: /team/:teamUUID/gitlabQueryOauth
+    function: gitlabQueryOauthCtrl
+  - type: external
+    methods:
+      - POST
+    url: /team/:teamUUID/gitlabAddOauth
+    function: gitlabAddOauthCtrl
+  - type: external
+    methods:
+      - POST
+    url: /team/:teamUUID/gitlabListRepo
+    function: gitlabListRepoCtrl
+  - type: external
+    methods:
+      - POST
+    url: /team/:teamUUID/gitlabAddRepo
+    function: gitlabAddRepoCtrl
+  - type: external
+    methods:
+      - POST
+    url: /team/:teamUUID/gitlabWebhook
+    function: gitlabWebhookCtrl
+modules:
+  - id: about-blank-BE8t
+    title: abc123
+    moduleType: about:blank
+    entry: modules/about-blank-BE8t/index.html
+  - id: about-blank-S45h
+    title: gitlab-add-repo
+    moduleType: ones:settings:pipeline:default:repo:link
+    preload: true
+    manual: true
+    entry: modules/about-blank-S45h/index.html
+abilities:
+  - id: QayeaBmz
+    name: 自定义代码仓库
+    version: 1.0.0
+    abilityType: CustomCodeRepository
+    relateModule:
+      addRepoPage: about-blank-S45h
+    config:
+      - key: repoToolName
+        label: 关联代码仓方式
+        value: '12.6'
+        fieldType: Input
+        show: true
+      - key: repoToolIcon
+        label: 图标
+        value: logo.svg
+        fieldType: Input
+        show: false
+      - key: repoToolDesc
+        label: 描述
+        value: Gitlab15.4代码仓
+        fieldType: Input
+        show: true
+    function:
+      removeRepoFunc: removeRepo

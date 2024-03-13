@@ -1,0 +1,10 @@
+abilityType: sidebarMenu
+abilityName: 侧边栏菜单
+abilityVersion: 1.0.0
+scope: team
+release: https://gitlab.plugins.myones.net/api/v4/projects/634/release/1.0.1
+min_system_version: 3.11.25
+max_system_version:
+test_func: sidebarMenuTest
+# https://gitlab.plugins.myones.net/api/v4/projects/619/release/1.6.7
+#https://gitlab.plugins.myones.net/api/v4/projects/634/release/1.0.1

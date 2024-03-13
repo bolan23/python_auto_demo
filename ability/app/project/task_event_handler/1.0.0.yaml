@@ -1,0 +1,8 @@
+abilityType: task_event_handler
+abilityName: 拦截工作项属性修改
+abilityVersion: 1.0.0
+scope: team
+release: https://gitlab.plugins.myones.net/api/v4/projects/635/release/1.0.1
+min_system_version: 3.7.54
+max_system_version:
+test_func: validateTaskEventHandler

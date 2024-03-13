@@ -1,0 +1,8 @@
+abilityType: ItemHandler
+abilityName: 拦截item
+abilityVersion: 1.0.0
+scope: team
+release: https://gitlab.plugins.myones.net/api/v4/projects/637/releases/1.1.26
+min_system_version: 3.10.29
+max_system_version:
+test_func: validateItemHandler

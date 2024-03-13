@@ -1,0 +1,8 @@
+abilityType: CustomizeTheTestReportComponents
+abilityName: 自定义测试报告组件
+abilityVersion: 1.0.0
+scope: team
+release: https://gitlab.plugins.myones.net/api/v4/projects/632/release/1.0.6
+min_system_version: 3.5.0
+max_system_version:
+test_func: userFilterAutoTest

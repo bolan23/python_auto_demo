@@ -1,0 +1,8 @@
+abilityType: testScriptField
+abilityName: 自定义工作项属性
+abilityVersion: 1.0.0
+scope: team
+release: https://gitlab.plugins.myones.net/api/v4/projects/643/releases/2.0.9
+min_system_version: 3.6.0
+max_system_version:
+test_func:

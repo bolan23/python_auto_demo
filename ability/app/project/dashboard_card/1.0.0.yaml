@@ -1,0 +1,8 @@
+abilityType: DashboardCard
+abilityName: 仪表盘卡片
+abilityVersion: 1.0.0
+scope: team
+release: https://gitlab.plugins.myones.net/api/v4/projects/633/release/1.0.0
+min_system_version: 3.13.50
+max_system_version:
+test_func: hello

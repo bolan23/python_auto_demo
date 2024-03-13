@@ -1,0 +1,8 @@
+abilityType: wiki_macro
+abilityName: wiki_宏
+abilityVersion: 1.0.0
+scope: team
+release: https://gitlab.plugins.myones.net/api/v4/projects/636/release/1.0.1
+min_system_version: 3.5.0
+max_system_version:
+test_func: hello

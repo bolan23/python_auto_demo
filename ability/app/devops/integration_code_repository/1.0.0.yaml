@@ -1,0 +1,8 @@
+abilityType: integration_code_repository
+abilityName: 关联代码仓
+abilityVersion: 1.0.0
+scope: team
+release: https://gitlab.plugins.myones.net/api/v4/projects/645/releases/1.0.1
+min_system_version: 3.6.0
+max_system_version:
+test_func:

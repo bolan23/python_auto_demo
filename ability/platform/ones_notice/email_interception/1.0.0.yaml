@@ -1,0 +1,8 @@
+abilityType: email_interception
+abilityName: 邮件拦截并自定义邮件
+abilityVersion: 1.0.0
+scope: team
+release: https://gitlab.plugins.myones.net/api/v4/projects/628/release/1.0.0
+min_system_version: 3.16.37
+max_system_version:
+test_func: EmailInterception

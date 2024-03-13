@@ -1,0 +1,8 @@
+abilityType: IndependentHostingService
+abilityName: 托管独立应用
+abilityVersion: 1.0.0
+scope: org
+release: https://gitlab.plugins.myones.net/api/v4/projects/631/release/1.0.0
+min_system_version: 3.10.28
+max_system_version:
+test_func: hello
